@@ -6,8 +6,18 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.btnBar{
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+  border-radius: 15px!important;
+}
+.btnBar:hover{
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.4)
+}
+@media (max-width: 756px) {
+  .media{
+    max-width: 100%!important;
+  }
+}
+.listProject{
+  color: #22577E;
 }
