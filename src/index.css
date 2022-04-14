@@ -17,11 +17,35 @@ body {
 .btnBar:hover{
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.4)
 }
+
+.box{
+  width: 900px;
+   display:flex;
+   margin: 30px auto ;
+  background-color: transparent;
+  backdrop-filter:blur(8px);
+  color: #22577E;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 20px;
+}
+.pProject {
+  font-size:20px;
+  color:white;
+  font-weight: 400;
+
+}
 @media (max-width: 756px) {
   .media{
     max-width: 100%!important;
   }
+
+  .box{
+    flex-wrap:wrap;
+    width:auto
+  }
+.imgProject{
+  height: 300px!important;
 }
-.listProject{
-  color: #22577E;
+  
 }

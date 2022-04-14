@@ -1,10 +1,7 @@
 
-import { Infoproject } from "./Infoproject";
-import {projects} from '../projects/list'
 
-const ProjectLink = ({ projecto }) => {
+export const Infoproject = ({projecto}) => {
   return (
- 
     <div
     style={{
       borderLeft: "1px solid #22577E",
@@ -16,8 +13,7 @@ const ProjectLink = ({ projecto }) => {
         className="imgProject"
         style={{
           width: "100%",
-          objectFit: "cover",
-          height: "400px",
+
           borderRadius: "15px",
         }}
         src={projecto.image}
@@ -32,7 +28,6 @@ const ProjectLink = ({ projecto }) => {
           style={{
             width: "40px",
             marginTop: "10px",
-            margin:' 0 30px'
           }}
           src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
           alt="git"
@@ -52,7 +47,4 @@ const ProjectLink = ({ projecto }) => {
   </div>
   )
 }
- 
-  
 
-export default ProjectLink;

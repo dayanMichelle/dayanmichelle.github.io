@@ -7,34 +7,36 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import AddIcon from '@mui/icons-material/Add';
 import ProjectLink from './ProjectLink';
+import {projects} from '../projects/list';
 import { useState } from 'react';
 const Project = () => {
-    const [projecto, setProjecto] = useState(0);
+    const [projecto, setProjecto] = useState({});
 
   return (
-    <Box sx={{ width: '100%', display:'flex',
-     maxWidth: 360, bgcolor: 'background.paper'}}>
+    <Box
+    className='box'>
       <nav aria-label="main mailbox folders" style={{width:'50%' }}>
         <List>
-          <ListItem disablePadding>
-            <ListItemButton onClick={()=>{setProjecto(1)}}>
+         {projects.map((project ) => (
+            <ListItem disablePadding>
+            <ListItemButton
+            onClick={()=>{
+          
+              setProjecto(project)
+              }}>
               <ListItemIcon>
-                <AddIcon />
+                <AddIcon sx={{color:'#22577E'}} />
               </ListItemIcon>
-              <ListItemText className='listProject' primary="Saving" />
+              <ListItemText 
+              > {project.name}</ListItemText>
+              {project.title}
             </ListItemButton>
           </ListItem>
-          <ListItem disablePadding>
-            <ListItemButton onClick={()=>{setProjecto(2)}}>
-              <ListItemIcon>
-                <AddIcon />
-              </ListItemIcon>
-              <ListItemText className='listProject' primary="Track" />
-            </ListItemButton>
-          </ListItem>
+         ))}
         </List>
       </nav>
-      <ProjectLink projecto={projecto}  style={{width:'50%' }}/>
+      {Object.keys(projecto).length > 0 && <ProjectLink style={{width:'50%' }} projecto={projecto}/>}
+
     </Box>
   );
 }
