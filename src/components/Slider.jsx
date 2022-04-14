@@ -15,7 +15,7 @@ const Slider = () => {
 
   return (
     <div 
-    style={{marginBottom:'30px'}}
+    style={{marginBottom:'80px'}}
     >
       <Accordion
         style={{ backgroundColor: "transparent", backdropFilter: "blur(3px)",border:'1px solid gray' }}

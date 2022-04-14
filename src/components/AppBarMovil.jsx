@@ -1,73 +1,86 @@
-
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import Drawer from '@mui/material/Drawer';
-import Button from '@mui/material/Button';
-import List from '@mui/material/List';
-import Divider from '@mui/material/Divider';
-import ListItem from '@mui/material/ListItem';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
-import { BoxContainer } from './BoxContainer';
+import { Button, ButtonGroup } from "@mui/material";
+import { BoxContainer } from "./BoxContainer";
+import { useState } from "react";
 
 export const AppBarMovil = () => {
-    const [value, setValue] = React.useState(0);
-    const [state, setState] = React.useState({
-        top: false,
-        left: false,
-        bottom: false,
-        right: false,
-      });
-    
-      const toggleDrawer = (anchor, open) => (event) => {
-        if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
-          return;
-        }
-    
-        setState({ ...state, [anchor]: open });
-      };
-      
-
-      const list = (anchor) => (
-        <Box
-          sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
-          role="presentation"
-          onClick={toggleDrawer(anchor, false)}
-          onKeyDown={toggleDrawer(anchor, false)}
-        >
-          <List>
-            {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-              <ListItem button key={text}>
-                <ListItemIcon>
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                </ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItem>
-            ))}
-          </List>
-         
-        </Box>
-      );
-
-
+  const [open, setOpen] = useState(0);
   return (
-    <div>
-      {['menu'].map((anchor) => (
-        <React.Fragment key={anchor}>
-          <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
-          <Drawer
-            anchor={anchor}
-            open={state[anchor]}
-            onClose={toggleDrawer(anchor, false)}
+    <>
+      <div
+        style={{
+          marginLeft: "calc(50% - 180px)",
+        }}
+      >
+        <ButtonGroup
+          variant="text"
+          style={{
+            backgroundColor: "transparent",
+            height: "50px",
+            backdropFilter: "blur(3px)",
+          }}
+          aria-label="text button group"
+        >
+          <Button
+            style={{
+              color: "#22577E",
+              width: "70px",
+            }}
+            onClick={() => {
+              setOpen(1);
+            }}
           >
-            {list(anchor)}
-          </Drawer>
-        </React.Fragment>
-      ))}
-      <BoxContainer render={value}/>
-    </div>
-  
-  )
-}
+            Home
+          </Button>
+          <Button
+            style={{
+              color: "#22577E",
+              width: "70px",
+            }}
+            onClick={() => {
+              setOpen(2);
+            }}
+          >
+            About
+          </Button>
+          <Button
+            style={{
+              color: "#22577E",
+              width: "70px",
+            }}
+            onClick={() => {
+              setOpen(3);
+            }}
+          >
+            Cv
+          </Button>
+
+          <Button
+            style={{
+              color: "#22577E",
+              width: "70px",
+            }}
+            onClick={() => {
+              setOpen(4);
+            }}
+          >
+            Projects
+          </Button>
+
+          <Button
+            style={{
+              color: "#22577E",
+              width: "70px",
+            }}
+            onClick={() => {
+              setOpen(5);
+            }}
+          >
+            Contact
+          </Button>
+        </ButtonGroup>
+       
+      </div> 
+      <BoxContainer render={open} />
+    </>
+  );
+};

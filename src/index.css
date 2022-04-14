@@ -6,6 +6,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url('./img/foto.svg');
+  background-position: center;
+  background-size: cover;
 }
 
 .btnBar{
