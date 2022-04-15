@@ -3,12 +3,12 @@ import { BoxContainer } from "./BoxContainer";
 import { useState } from "react";
 
 export const AppBarMovil = () => {
-  const [open, setOpen] = useState(0);
+  const [open, setOpen] = useState(1);
   return (
     <>
       <div
         style={{
-          marginLeft: "calc(50% - 180px)",
+          marginLeft: "calc(50% - 170px)",
         }}
       >
         <ButtonGroup
@@ -22,8 +22,8 @@ export const AppBarMovil = () => {
         >
           <Button
             style={{
-              color: "#22577E",
-              width: "70px",
+              color: "#ea0665",
+              width: "80px",
             }}
             onClick={() => {
               setOpen(1);
@@ -31,21 +31,11 @@ export const AppBarMovil = () => {
           >
             Home
           </Button>
+      
           <Button
             style={{
-              color: "#22577E",
-              width: "70px",
-            }}
-            onClick={() => {
-              setOpen(2);
-            }}
-          >
-            About
-          </Button>
-          <Button
-            style={{
-              color: "#22577E",
-              width: "70px",
+              color: "#ea0665",
+              width: "80px",
             }}
             onClick={() => {
               setOpen(3);
@@ -56,8 +46,8 @@ export const AppBarMovil = () => {
 
           <Button
             style={{
-              color: "#22577E",
-              width: "70px",
+              color: "#ea0665",
+              width: "90px",
             }}
             onClick={() => {
               setOpen(4);
@@ -68,8 +58,8 @@ export const AppBarMovil = () => {
 
           <Button
             style={{
-              color: "#22577E",
-              width: "70px",
+              color: "#ea0665",
+              width: "80px",
             }}
             onClick={() => {
               setOpen(5);

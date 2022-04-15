@@ -15,56 +15,60 @@ const Slider = () => {
 
   return (
     <div 
-    style={{marginBottom:'80px'}}
+    style={{marginBottom:'80px',   }}
+ 
     >
       <Accordion
-        style={{ backgroundColor: "transparent", backdropFilter: "blur(3px)",border:'1px solid gray' }}
+        style={{ backgroundColor: "transparent", backdropFilter: "blur(3px)",border:'1px solid rgba(250,114,104,0.31)'}}
         expanded={expanded === "panel1"}
         onChange={handleChange("panel1")}
       >
         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-          <Typography style={{color:'#22577E',fontWeight:'bold'}} variant="overline">Who am I</Typography>
+          <p   style={{color:'white'}}>Who am I</p>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography style={{color:'white'}} variant="string">
+          <p style={{color:'white'}}>
             I am a programmer with almost a year of experience in successfully
             maintaining and creating web software. In constant professional
             growth to generate a positive impact in my environment.
-          </Typography>
+          </p>
         </AccordionDetails>
       </Accordion>
       <Accordion
-       style={{ backgroundColor: "transparent", backdropFilter: "blur(3px)",border:'1px solid gray' }}
+       style={{ backgroundColor: "transparent", backdropFilter: "blur(3px)" ,border:'1px solid rgba(250,114,104,0.31)'}}
         expanded={expanded === "panel2"}
         onChange={handleChange("panel2")}
       >
         <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
-          <Typography style={{color:'#22577E',fontWeight:'bold'}} variant="overline">Experience</Typography>
+          <p   style={{color:'white'}}>Experience</p>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography style={{color:'white'}} variant="string" paragraph="true">
+         <p  style={{color:'white'}}>
+
             <p>Full-stack developer</p>
             <p>VOX COMMUNICATIONS| AUG 2021 -</p>
-            Maintain client software designed in different languages.
+            <p>Maintain client software designed in different languages.</p> 
             <p>- Design and program web applications (front-end) with React.</p>
-          </Typography>
+         </p>
+           
+          
         </AccordionDetails>
       </Accordion>
       <Accordion
-       style={{ backgroundColor: "transparent", backdropFilter: "blur(3px)",border:'1px solid gray' }}
+       style={{ backgroundColor: "transparent", backdropFilter: "blur(3px)",border:'1px solid rgba(234,6,101,0.31)'}}
         expanded={expanded === "panel3"}
         onChange={handleChange("panel3")}
       >
         <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-          <Typography style={{color:'#22577E',fontWeight:'bold'}} variant="overline">Education</Typography>
+          <p  style={{color:'white'}}>Education</p>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography style={{color:'white'}} variant="string">
+          <p   style={{color:'white'}}>
             <p>React / React UI library</p>
             <p>Javascript</p>
             <p>NextJS / Next UI - MongoDB</p>
             <p>Typescript</p>
-          </Typography>
+          </p>
         </AccordionDetails>
       </Accordion>
     </div>

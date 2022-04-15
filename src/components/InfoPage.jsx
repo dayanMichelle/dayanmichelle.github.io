@@ -7,7 +7,7 @@ const InfoPage = () => {
         }}>
             <div>
                 <p style={{ color: 'gray', fontWeight: 'bold' }}>CV</p>
-                <p style={{ fontFamily: 'Roboto sans-serif', fontSize: '30px', margin: '0', color: '#22577E' }}>Dayan Arango Vallejo</p>
+                <p style={{ fontFamily: 'Roboto sans-serif', fontSize: '30px', margin: '0', color: '#EA0665',fontWeight:'bold' }}>Dayan Arango Vallejo</p>
                 <hr style={{ backgroundColor: '#F5C6AA' }} />
                 
                 <Slider />

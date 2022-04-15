@@ -21,11 +21,11 @@ export const CardComponent = () => {
         height:500,
         margin: '0px auto',
         borderRadius:'30px',
-        color:'#22577E',
+        color:'white',
         backgroundColor:'transparent',
         backdropFilter:'blur(3px)',
-        WebkitBoxShadow:' 5px 5px 20px 5px rgba(0,0,0,0.5)',
-        boxShadow: '2px 5px 10px 2px rgba(0,0,0,0.2)',
+        webkitBoxShadow:' 4px 3px 15px 1px rgba(234,6,101,0.64);',
+        boxShadow: '4px 3px 15px 1px rgba(234,6,101,0.64);'
      }}>
       <CardContent>
       <Avatar alt="Remy Sharp"
@@ -40,10 +40,10 @@ export const CardComponent = () => {
        </CardContent>
       <CardActions>
           <div style={{display:'flex',gap:'20px',margin:'30px auto'}}>
-               <Link href="#"  style={{color:'#22577E'}} ><GitHubIcon /></Link>
-               <Link href="#"  style={{color:'#22577E'}} ><InstagramIcon /></Link>
-               <Link href="#"  style={{color:'#22577E'}} ><TwitterIcon /></Link>
-               <Link href="#"  style={{color:'#22577E'}} ><YouTubeIcon /></Link>
+               <Link href="#"  style={{color:'white'}} ><GitHubIcon /></Link>
+               <Link href="#"  style={{color:'white'}} ><InstagramIcon /></Link>
+               <Link href="#"  style={{color:'white'}} ><TwitterIcon /></Link>
+               <Link href="#"  style={{color:'white'}} ><YouTubeIcon /></Link>
           </div>
      
       </CardActions>

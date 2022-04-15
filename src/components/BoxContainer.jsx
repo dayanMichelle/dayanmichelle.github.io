@@ -1,4 +1,5 @@
 import Box from "@mui/material/Box";
+import { Banner } from "./Banner";
 import ContactPage from "./ContactPage";
 import CvPage from "./CvPage";
 import HomePage from "./HomePage";
@@ -15,16 +16,17 @@ export const BoxContainer = ({ render }) => {
       }}
     >
       {render === 1 ? (
-        <HomePage />
+        <>
+          <Banner />
+          <HomePage />
+        </>
       ) : render === 2 ? (
         <CvPage />
       ) : render === 3 ? (
         <CvPage />
-      ) : 
-        render === 4 ?(
-          <Project />
-        )
-       : (
+      ) : render === 4 ? (
+        <Project />
+      ) : (
         render === 5 && <ContactPage />
       )}
     </Box>

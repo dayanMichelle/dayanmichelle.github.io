@@ -1,51 +1,99 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('./img/foto.svg');
+  background-image: url("./img/foto.svg");
   background-position: center;
   background-size: cover;
+  font-family: "Akshar", sans-serif;
 }
 
-.btnBar{
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
-  border-radius: 15px!important;
+.btnBar {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 15px !important;
 }
-.btnBar:hover{
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.4)
+.btnBar:hover {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
 }
 
-.box{
+.box {
   width: 900px;
-   display:flex;
-   margin: 30px auto ;
+  display: flex;
+  margin: 30px auto;
   background-color: transparent;
-  backdrop-filter:blur(8px);
-  color: #22577E;
+  backdrop-filter: blur(8px);
+  color: #22577e;
   font-size: 20px;
   font-weight: 500;
   border-radius: 20px;
 }
 .pProject {
-  font-size:20px;
-  color:white;
+  font-size: 20px;
+  color: white;
   font-weight: 400;
+}
 
+.post:hover {
+  transform: scale(1.04);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.tecnologies {
+  padding: 15px;
+  font-weight: bold;
+  font-size: 1em;
+  transition: 0.3s all ease;
+  text-align: center;
+}
+.banner-text {
+  width: 50%;
+  margin: 0 30px;
+  color: white;
+  text-align: center;
 }
 @media (max-width: 756px) {
-  .media{
-    max-width: 100%!important;
+  .media {
+    max-width: 100% !important;
   }
 
-  .box{
-    flex-wrap:wrap;
-    width:auto
+  .box {
+    flex-wrap: wrap;
+    width: auto;
   }
-.imgProject{
-  height: 300px!important;
+  .imgProject {
+    height: 300px !important;
+  }
+  .banner-text {
+    width: 100% !important;
+  }
+  .form-image {
+    display: none;
+  }
 }
-  
+
+.inputForm {
+  background-color: rgba(250, 114, 104, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  width: 200px;
+  margin: 7px;
+}
+.form-image {
+  max-width: 600px;
+  min-width: 300px;
+}
+.inputForm::placeholder {
+  color: white;
+}
+form {
+  background-color: transparent;
+  backdrop-filter: blur(25px);
+  height: 100%;
+  display: inline-block;
+  text-align: center;
 }
