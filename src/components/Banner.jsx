@@ -27,12 +27,7 @@ export const Banner = () => {
       </div>
 
       <div
-        style={{
-          padding: "30px",
-          color:'white',
-          backgroundColor:'transparent',
-          backdropFilter: "blur(25px)",
-        }} 
+      
         className='cardName'
       >
         <Avatar alt="" src={Me} sx={{ width: 150, height: 150,  transform: "rotate(15deg)", }} />

@@ -16,10 +16,10 @@ const Slider = () => {
   return (
     <div 
     style={{marginBottom:'80px',   }}
- 
+    className='accordion'
     >
       <Accordion
-        style={{ backgroundColor: "transparent", backdropFilter: "blur(3px)",border:'1px solid rgba(250,114,104,0.31)'}}
+       style={{ backgroundColor: "transparent", backdropFilter: "blur(3px)" ,border:'1px solid rgba(250,114,104,0.31)'}}
         expanded={expanded === "panel1"}
         onChange={handleChange("panel1")}
       >

@@ -97,3 +97,18 @@ form {
   display: inline-block;
   text-align: center;
 }
+.accordion 
+{
+   background-color: transparent;
+   backdrop-filter: blur(33px);
+   border:1px solid rgba(250,114,104,0.31);
+}
+.cardName
+{
+  padding: 30px;
+  color:white;
+  border-radius: 10px;
+  border:1px solid ;
+  background-color:transparent;
+  backdrop-filter: blur(25px);
+}
