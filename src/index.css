@@ -110,3 +110,11 @@ form {
   background-color: transparent;
   backdrop-filter: blur(25px);
 }
+.content
+{
+  color: white;
+  font-size: 17px;
+  margin: 0 auto;
+  max-width: 900px;
+  min-width: 300px;
+}

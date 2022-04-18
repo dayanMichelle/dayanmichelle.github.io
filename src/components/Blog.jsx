@@ -10,7 +10,7 @@ export const Blog = ({blog}) => {
   return (
     <Card 
     sx={{ 
-      maxWidth: 345,
+      width: 345,
       backgroundColor:'transparent',
       backdropFilter: "blur(25px)",
       borderRadius:'10px',
@@ -28,8 +28,9 @@ export const Blog = ({blog}) => {
         <h3 style={{fontSize:'20px'}}>
          {blog.title}
         </h3>
-        <p>
-          {blog.content}
+        <p>    
+        
+          {blog.content.substr(0,100) ? blog.content.length >= 100 : blog.content}
         </p>
       </CardContent>
     </CardActionArea>
