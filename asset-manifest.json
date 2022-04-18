@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/dayanArango-webSite/static/css/main.f2dd234d.css",
+    "main.js": "/dayanArango-webSite/static/js/main.4b9c4f66.js",
+    "static/js/787.28cb0dcd.chunk.js": "/dayanArango-webSite/static/js/787.28cb0dcd.chunk.js",
+    "static/media/saving.png": "/dayanArango-webSite/static/media/saving.28a40296e9bca7b6357c.png",
+    "static/media/youtube.png": "/dayanArango-webSite/static/media/youtube.d9fb8fa0de29af20132f.png",
+    "static/media/control.png": "/dayanArango-webSite/static/media/control.ca5b759320dbebc22aa7.png",
+    "static/media/me.jpeg": "/dayanArango-webSite/static/media/me.27ef3a0d468c75a68196.jpeg",
+    "static/media/foto.svg": "/dayanArango-webSite/static/media/foto.1d93614b5201303c67aa.svg",
+    "index.html": "/dayanArango-webSite/index.html",
+    "main.f2dd234d.css.map": "/dayanArango-webSite/static/css/main.f2dd234d.css.map",
+    "main.4b9c4f66.js.map": "/dayanArango-webSite/static/js/main.4b9c4f66.js.map",
+    "787.28cb0dcd.chunk.js.map": "/dayanArango-webSite/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f2dd234d.css",
+    "static/js/main.4b9c4f66.js"
+  ]
+}
