@@ -5,8 +5,7 @@ import CvPage from "./CvPage";
 import HomePage from "./HomePage";
 import Project from "./Project";
 
-export const BoxContainer = ({ render }) => {
-  console.log(render);
+export const BoxContainer = () => {
   return (
     <Box
       sx={{
@@ -15,20 +14,8 @@ export const BoxContainer = ({ render }) => {
         margin: "0px auto",
       }}
     >
-      {render === 1 ? (
-        <>
-          <Banner />
-          <HomePage />
-        </>
-      ) : render === 2 ? (
-        <CvPage />
-      ) : render === 3 ? (
-        <CvPage />
-      ) : render === 4 ? (
-        <Project />
-      ) : (
-        render === 5 && <ContactPage />
-      )}
+      <Banner />
+      <HomePage />
     </Box>
   );
 };

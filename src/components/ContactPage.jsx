@@ -1,6 +1,17 @@
 import React from "react";
+import { useForm, ValidationError } from "@formspree/react";
+import HomePage from "./HomePage";
 
-const ContactPage = () => {
+const ContactPage = ({}) => {
+  const [state, handleSubmit] = useForm("xeqnrvlg");
+  const [contact, setContact] = React.useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  if (state.succeeded) (
+    <HomePage   />
+  )
   return (
     <div
       style={{
@@ -23,24 +34,59 @@ const ContactPage = () => {
           width: "400px",
         }}
       >
-        <form
-          action=""
+        <form method="POST" onSubmit={handleSubmit}>
+          <p
+            style={{
+              color: "white",
+              fontWeight: "bold",
+              fontSize: "40px",
+              margin: "0",
+            }}
           >
-          <p style={{ color: "white", fontWeight: "bold", fontSize: "40px",margin:'0' }}>
             Let's contact
           </p>
           <div>
-            <input className="inputForm" type="text" placeholder="Name" />
-            <input className="inputForm" type="text" placeholder="Email" />
-            <textarea
+            <input
+              name="name"
+              onChange={(e) => {
+                setContact({ ...contact, name: e.target.value });
+              }}
+              value={contact.name}
               className="inputForm"
-
-              name=""
-              id=""
+              type="text"
+              placeholder="Name"
+            />
+            <input
+              name="email"
+              onChange={(e) => {
+                setContact({ ...contact, email: e.target.value });
+              }}
+              value={contact.email}
+              className="inputForm"
+              type="text"
+              placeholder="Email"
+            />
+            <ValidationError
+              prefix="Email"
+              field="email"
+              errors={state.errors}
+            />
+            <textarea
+              name="message"
+              className="inputForm"
+              value={contact.message}
               cols="30"
               rows="10"
               placeholder="Message"
+              onChange={(e) => {
+                setContact({ ...contact, message: e.target.value });
+              }}
             ></textarea>
+            <ValidationError
+              prefix="Message"
+              field="message"
+              errors={state.errors}
+            />
           </div>
 
           <button
@@ -51,9 +97,10 @@ const ContactPage = () => {
               fontSize: "16px",
               border: "none",
               padding: "15px",
-              width:'200px',
+              width: "200px",
               borderRadius: "5px",
             }}
+            disabled={state.submitting}
             type="submit"
           >
             Send

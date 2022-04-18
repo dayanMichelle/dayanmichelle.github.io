@@ -3,9 +3,10 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import { Button, CardActionArea, CardActions } from '@mui/material';
-
+import {useNavigate} from 'react-router-dom'
 
 export const Blog = ({blog}) => {
+  const navigate = useNavigate()
   return (
     <Card 
     sx={{ 
@@ -33,7 +34,9 @@ export const Blog = ({blog}) => {
       </CardContent>
     </CardActionArea>
     <CardActions>
-      <Button size="small" sx={{color:'white'}}>
+      <Button size="small" sx={{color:'white'}}
+      onClick={()=>navigate(`/${blog.id}`)}
+      >
         Read
       </Button>
     </CardActions>

@@ -1,8 +1,10 @@
 import { Button, ButtonGroup } from "@mui/material";
 import { BoxContainer } from "./BoxContainer";
 import { useState } from "react";
+import {useNavigate} from 'react-router-dom'
 
 export const AppBarMovil = () => {
+  const navigate = useNavigate()
   const [open, setOpen] = useState(1);
   return (
     <>
@@ -26,7 +28,7 @@ export const AppBarMovil = () => {
               width: "80px",
             }}
             onClick={() => {
-              setOpen(1);
+              navigate('/')
             }}
           >
             Home
@@ -38,7 +40,7 @@ export const AppBarMovil = () => {
               width: "80px",
             }}
             onClick={() => {
-              setOpen(3);
+              navigate('/cv')
             }}
           >
             Cv
@@ -50,7 +52,7 @@ export const AppBarMovil = () => {
               width: "90px",
             }}
             onClick={() => {
-              setOpen(4);
+              navigate('/projects')
             }}
           >
             Projects
@@ -62,7 +64,7 @@ export const AppBarMovil = () => {
               width: "80px",
             }}
             onClick={() => {
-              setOpen(5);
+              navigate('/contact')
             }}
           >
             Contact
@@ -70,7 +72,7 @@ export const AppBarMovil = () => {
         </ButtonGroup>
        
       </div> 
-      <BoxContainer render={open} />
+    
     </>
   );
 };

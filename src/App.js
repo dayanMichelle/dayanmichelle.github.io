@@ -1,19 +1,28 @@
 
 import './App.css';
 import { AppBarMovil } from './components/AppBarMovil';
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Layout } from './components/Layout';
+import { ReadMore } from './components/ReadMore';
+import { BoxContainer } from './components/BoxContainer';
+import CvPage from './components/CvPage';
+import Project from './components/Project';
+import ContactPage from './components/ContactPage';
 
 function App() {
-  
   return (
-    <div style={{
-      maxWidth: '100%',
-      margin: '0 auto',
-    }}>
+    <BrowserRouter>
+    <Routes>
 
-  <AppBarMovil /> 
-      
-    </div>
+      <Route path="/" element={<Layout />}>
+        <Route index element={  <BoxContainer  /> }/>
+        <Route path="/cv" element={<CvPage />} />
+        <Route path="/projects" element={<Project />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path=":id" element={<ReadMore />} />
+      </Route>
+    </Routes>
+  </BrowserRouter>
   );
 }
 
