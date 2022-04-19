@@ -90,16 +90,7 @@ const ContactPage = ({}) => {
           </div>
 
           <button
-            style={{
-              backgroundColor: "#fa7268",
-              color: "white",
-              fontWeight: "500",
-              fontSize: "16px",
-              border: "none",
-              padding: "15px",
-              width: "200px",
-              borderRadius: "5px",
-            }}
+            className="btnSend"
             disabled={state.submitting}
             type="submit"
           >
