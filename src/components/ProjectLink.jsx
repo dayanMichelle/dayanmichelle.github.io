@@ -12,7 +12,16 @@ const ProjectLink = ({ projecto }) => {
     }}
   >
     <div>
-      <img
+      {
+        projecto?.video ? (
+          <video 
+          src={projecto.video}
+          muted
+          width="100%" 
+          controls />
+        ):
+        (
+           <img
         className="imgProject"
         style={{
           width: "100%",
@@ -22,6 +31,9 @@ const ProjectLink = ({ projecto }) => {
         }}
         src={projecto.image}
       />
+        )
+      }
+     
     </div>
     <div className="pProject">
       <p>
@@ -38,16 +50,21 @@ const ProjectLink = ({ projecto }) => {
           alt="git"
         />
       </a>
-      <a href={projecto.image}>
-        <img
-          style={{
-            width: "40px",
-            marginTop: "10px",
-          }}
-          src="https://img.icons8.com/stickers/344/application-window.png"
-          alt="web"
-        />
-      </a>
+      {
+        projecto?.web && (
+          <a href={projecto.image}>
+          <img
+            style={{
+              width: "40px",
+              marginTop: "10px",
+            }}
+            src="https://img.icons8.com/stickers/344/application-window.png"
+            alt="web"
+          />
+         </a>
+        )
+      }
+      
     </div>
   </div>
   )

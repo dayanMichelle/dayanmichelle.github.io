@@ -21,6 +21,7 @@ body {
 
 .box {
   width: 900px;
+  height: 100vh;
   display: flex;
   margin: 30px auto;
   background-color: transparent;
@@ -72,6 +73,12 @@ body {
   .form-image {
     display: none;
   }
+
+}
+video{
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
 }
 
 .inputForm {
@@ -110,8 +117,7 @@ form {
   background-color: transparent;
   backdrop-filter: blur(25px);
 }
-.content
-{
+.content {
   color: white;
   font-size: 17px;
   margin: 0 auto;
