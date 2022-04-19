@@ -7,15 +7,15 @@ export const projects = [
         description: 'This Web is building with react and NextJs. For styles I used NextUI. For send emails I use SendGrid. ',
         image: Saving,
         git:'https://github.com/dayanMichelle/saveAnimalsNext',
-        web:''
+        web:'https://saving-ivory.vercel.app/'
 
     },  {
         id:2,
-        title: 'Control-Expense',
+        title: 'C R M',
         description: 'This web is building with React and localStorage for the data.',
         image: Control,
-        git:'https://github.com/dayanMichelle/saveAnimalsNext',
-        web:''
+        git:'https://github.com/dayanMichelle/crm-react',
+        web:'https://reliable-platypus-963c51.netlify.app/'
 
     }
 ]
