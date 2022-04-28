@@ -1,5 +1,5 @@
 import { Avatar } from "@mui/material";
-import Me from "../img/me.jpeg";
+import Me from "../img/me.png";
 
 export const Banner = () => {
   return (
@@ -30,7 +30,7 @@ export const Banner = () => {
       
         className='cardName'
       >
-        <Avatar alt="" src={Me} sx={{ width: 150, height: 150,  transform: "rotate(15deg)", }} />
+        <Avatar alt="" src={Me} sx={{ width: 150, height: 150 }} />
         <div className="tecnologies">React - Redux</div>
         <div className="tecnologies">MongoDB - Sql</div>
         <div className="tecnologies">Node - Express</div>
