@@ -16,7 +16,7 @@ export const listBlogs =
 
     },
     {
-        "id": "2",
+        "id": "3",
         "title": "My Youtube Channel",
         "image": youtube,
         "content":"I am the creator of dayan developer where I share my experiences and as a developer",

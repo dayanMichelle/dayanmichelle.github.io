@@ -11,7 +11,6 @@ export const ReadMore = () => {
       }
     });
   }, []);
-  console.log("rederzano nblov");
   return (
     <div
     style={{
@@ -31,7 +30,7 @@ export const ReadMore = () => {
       </h3>
       <img
         style={{
-          maxWidth: "60%",
+          maxWidth: "50%",
           minWidth:"250px",
           margin: "0 auto",
           display: "block",
@@ -39,7 +38,9 @@ export const ReadMore = () => {
         src={blog.image}
       />
       <div className="content">
-        <p>{blog.content}</p>
+        <p style={{
+          whiteSpace: "pre-wrap",
+        }}>{blog.content}</p>
         {blog.link && (
           <a
           style={{
