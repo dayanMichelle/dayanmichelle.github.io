@@ -8,9 +8,19 @@ import AddIcon from "@mui/icons-material/Add";
 import ProjectLink from "./ProjectLink";
 import { projects } from "../projects/list";
 import { useState } from "react";
+import Spinner from "./Spinner";
 const Project = () => {
   const [projecto, setProjecto] = useState({});
+  const [loading, setLoading] = useState(false);
 
+  const handleLoading = (project) => {
+    
+    setProjecto(project);
+    setLoading((prev) => !prev);
+    setTimeout(() => {
+      setLoading((prev) => !prev);
+    }, 3000);
+  }
   return (
     <>
   
@@ -21,11 +31,11 @@ const Project = () => {
         >  
           <List>
             {projects.map((project) => (
-              <ListItem disablePadding>
+              <ListItem 
+              key={project.id}
+              disablePadding>
                 <ListItemButton
-                  onClick={() => {
-                    setProjecto(project);
-                  }}
+                  onClick={() => handleLoading(project)}
                 >
                   <ListItemIcon>
                     <AddIcon sx={{ color: "#FA7268" }} />
@@ -37,9 +47,14 @@ const Project = () => {
             ))}
           </List>
         </nav>
-        {Object.keys(projecto).length > 0 && (
-          <ProjectLink style={{ width: "50%" }} projecto={projecto} />
-        )}
+        {!loading ? 
+          Object.keys(projecto).length > 0 && (
+         
+            <ProjectLink loading={loading}  style={{ width: "50%" }} projecto={projecto} />
+          
+          )
+         : <Spinner />}
+        
       </Box>
     </>
   );
