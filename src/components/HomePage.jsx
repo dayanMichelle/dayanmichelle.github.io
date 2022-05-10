@@ -24,7 +24,7 @@ const HomePage = () => {
           marginTop: "50px",
         }}
       >
-        Blogs and Posts 💫
+        Blogs Y Posts 💫
       </h1>
       <div
         style={{

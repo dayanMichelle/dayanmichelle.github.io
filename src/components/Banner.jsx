@@ -14,22 +14,22 @@ export const Banner = () => {
       }}
     >
       <div className="banner-text">
-        <h1>Hi, i'm Dayan Arango ✨</h1>
+        <h1>Hola soy Dayan Arango ✨</h1>
         <p>
-          Optio voluptatibus impedit aperiam temporibus minima sed unde
-          perspiciatis minus atque molestias illum ullam necessitatibus, fuga
-          quisquam corrupti! Veritatis cumque eaque atque, reiciendis, officiis
-          sed quas id minus perspiciatis eum, doloremque error. Deserunt amet
-          rem rerum unde incidunt numquam facilis sunt minus corrupti beatae
-          praesentium necessitatibus voluptate harum neque repellendus soluta
-          atque, dignissimos suscipit illo!{" "}
+          💻 Soy un desarrollador fronted Me apasiona aprender sobre la
+          innovación tecnológica y que mi trabajo tenga un impacto positivo en
+          la calidad de vida de las personas. 📝En el camino he aprendido a
+          desafiarme a mí mismo para lograr objetivos. <br /> En mis estrategias de
+          programación incorporo herramientas como React, Typescript
+          (Javascript). Herramientas de estilo como React MUI, NextUI,
+          componente con estilo y módulos. También realizo conexiones con
+          servicios y apis. Tengo conocimiento en base de datos como Mysql y
+          MongoDB. Uso Node, express y moongose ​​para crear mis proyectos
+          personales.{" "}
         </p>
       </div>
 
-      <div
-      
-        className='cardName'
-      >
+      <div className="cardName">
         <Avatar alt="" src={Me} sx={{ width: 150, height: 150 }} />
         <div className="tecnologies">React - Redux</div>
         <div className="tecnologies">MongoDB - Sql</div>

@@ -18,40 +18,26 @@ const Slider = () => {
     style={{marginBottom:'80px',   }}
     className='accordion'
     >
-      <Accordion
-       style={{ backgroundColor: "transparent", backdropFilter: "blur(3px)" ,border:'1px solid rgba(250,114,104,0.31)'}}
-        expanded={expanded === "panel1"}
-        onChange={handleChange("panel1")}
-      >
-        <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-          <p   style={{color:'white'}}>Who am I</p>
-        </AccordionSummary>
-        <AccordionDetails>
-          <p style={{color:'white'}}>
-            I am a programmer with almost a year of experience in successfully
-            maintaining and creating web software. In constant professional
-            growth to generate a positive impact in my environment.
-          </p>
-        </AccordionDetails>
-      </Accordion>
+      
       <Accordion
        style={{ backgroundColor: "transparent", backdropFilter: "blur(3px)" ,border:'1px solid rgba(250,114,104,0.31)'}}
         expanded={expanded === "panel2"}
         onChange={handleChange("panel2")}
       >
         <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
-          <p   style={{color:'white'}}>Experience</p>
+          <p   style={{color:'white'}}>Experiencia</p>
         </AccordionSummary>
         <AccordionDetails>
-         <p  style={{color:'white'}}>
+         <div  style={{color:'white'}}>
 
             <p>Full-stack developer</p>
-            <p>VOX COMMUNICATIONS| AUG 2021 -</p>
-            <p>Maintain client software designed in different languages.</p> 
-            <p>- Design and program web applications (front-end) with React.</p>
-         </p>
-           
-          
+            <p>VOX COMMUNICATIONS| AGO 2021 -</p>
+            <p>Me desempeño como desarrollador web, donde me encargo de mantener, implementar y crear soluciones para los clientes. En mi puesto he trabajado en:</p> 
+         
+            <p> - Desarrollar soluciones a los problemas de los clientes en cuanto al funcionamiento de su código.</p>
+            <p> - Implementar los requisitos del cliente.</p>
+            <p>- Aprende diferentes idiomas sobre la marcha. Así que me mantengo en constante entrenamiento.</p>
+          </div>
         </AccordionDetails>
       </Accordion>
       <Accordion
@@ -63,12 +49,10 @@ const Slider = () => {
           <p  style={{color:'white'}}>Education</p>
         </AccordionSummary>
         <AccordionDetails>
-          <p   style={{color:'white'}}>
-            <p>React / React UI library</p>
-            <p>Javascript</p>
-            <p>NextJS / Next UI - MongoDB</p>
-            <p>Typescript</p>
-          </p>
+          <div   style={{color:'white'}}>
+            <p>Soy egresada de AIEP en Programación Computacional.</p>
+            <p>2019 - 2020</p>
+          </div>
         </AccordionDetails>
       </Accordion>
     </div>

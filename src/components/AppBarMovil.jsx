@@ -31,7 +31,7 @@ export const AppBarMovil = () => {
               navigate('/')
             }}
           >
-            Home
+            Inicio
           </Button>
       
           <Button
@@ -55,7 +55,7 @@ export const AppBarMovil = () => {
               navigate('/projects')
             }}
           >
-            Projects
+            Projectos
           </Button>
 
           <Button
@@ -67,7 +67,7 @@ export const AppBarMovil = () => {
               navigate('/contact')
             }}
           >
-            Contact
+            Contacto
           </Button>
         </ButtonGroup>
        

@@ -40,15 +40,16 @@ export const ReadMore = () => {
       <div className="content">
         <p style={{
           whiteSpace: "pre-wrap",
+          fontSize: "20px",
         }}>{blog.content}</p>
         {blog.link && (
           <a
           style={{
-            color: "white",
+            color: "#7FB5FF",
             fontSize: "20px",
             textDecoration: "none",
           }} 
-          href={blog.link}>->Go</a>
+          href={blog.link}>Ir a Youtube</a>
         )}
       </div>
     </div>

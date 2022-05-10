@@ -19,7 +19,7 @@ const Project = () => {
     setLoading((prev) => !prev);
     setTimeout(() => {
       setLoading((prev) => !prev);
-    }, 3000);
+    }, 1500);
   }
   return (
     <>
@@ -27,7 +27,7 @@ const Project = () => {
       <Box className="box">
         <nav
           aria-label="main mailbox folders"
-          style={{ width: "50%", color: "#FA7268",textAlign:'center' }}
+          style={{ width: "140px", color: "#FA7268",textAlign:'center' }}
         >  
           <List>
             {projects.map((project) => (

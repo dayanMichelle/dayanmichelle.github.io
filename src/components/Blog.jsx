@@ -38,7 +38,7 @@ export const Blog = ({blog}) => {
       <Button size="small" sx={{color:'white'}}
       onClick={()=>navigate(`/${blog.id}`)}
       >
-        Read
+        Leer más
       </Button>
     </CardActions>
   </Card>

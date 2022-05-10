@@ -46,8 +46,8 @@ const ProjectLink = ({ projecto }) => {
             marginTop: "10px",
             margin:' 0 30px',
           }}
-          src="https://img.icons8.com/color/344/git.png"
-          alt="git"
+          src="https://img.icons8.com/ios/344/github--v1.png"
+          alt="github"
         />
       </a>
       {
@@ -58,7 +58,7 @@ const ProjectLink = ({ projecto }) => {
               width: "40px",
               marginTop: "10px",
             }}
-            src="https://img.icons8.com/stickers/344/application-window.png"
+            src="https://img.icons8.com/ios/344/internet-browser--v1.png"
             alt="web"
           />
          </a>

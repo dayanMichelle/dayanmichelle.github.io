@@ -55,6 +55,9 @@ body {
   color: white;
   text-align: center;
 }
+.banner-text p {
+  font-size: 1.1em;
+}
 @media (max-width: 756px) {
   .media {
     max-width: 100% !important;
@@ -70,10 +73,14 @@ body {
   .banner-text {
     width: 100% !important;
   }
+ 
+
+}
+
+@media (max-width: 1020px) {
   .form-image {
     display: none;
   }
-
 }
 video{
   width: 90%;
